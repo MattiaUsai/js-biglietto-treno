@@ -19,3 +19,4 @@ Questo richiederà un minimo di ricerca.
 //applicare lo sconto del 40% a chi e maggiorenne// se over65 è true allora applica sconto saleover65
 //calcolare il prezzo finale del biglietto 
 //arrotondare il prezzo finale a massimo 2 cifre decimali.
+    
