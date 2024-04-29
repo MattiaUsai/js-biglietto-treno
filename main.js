@@ -1,34 +1,34 @@
-const kmuser = Number(prompt("Quanti chilometri vuole percorrere?"));
+const kmUser = Number(prompt("Quanti chilometri vuole percorrere?"));
 
-const yearuser = Number(prompt("Quanti anni hai?"));
+const yearUser = Number(prompt("Quanti anni hai?"));
 
-const  kmprice = 0.21;
+const  kmPrice = 0.21;
 
-const pricekmuser = kmprice * kmuser ;
-let price = pricekmuser;
-const underage = 18;
+const priceKmUser = kmPrice * kmUser ;
+let price = priceKmUser;
+const underAge = 18;
 const over65 = 65;
 
-const saleunderage = 20;
-const saleover65 = 40;
+const saleUnderAge = 20;
+const saleOver65 = 40;
 
-if (underage>yearuser) {
-   price= price - (price/100*saleunderage)
+if (underAge>yearUser) {
+   price= price - (price/100*saleUnderAge)
    
-}else if(over65<yearuser) {
-    price=price- (price/100*saleover65)
+}else if(over65<yearUser) {
+    price=price- (price/100*saleOver65)
 }
 
 
-
+price = price.toFixed(2);
 
 
 let  currentText;
 currentText = `
-km da percorrere: ${kmuser}  
-anni dell'utente: ${yearuser} 
-prezzo al km ${kmprice}€     
-prezzo dei km da percorrere ${pricekmuser}€
+km da percorrere: ${kmUser}  
+anni dell'utente: ${yearUser} 
+prezzo al km ${kmPrice}€     
+prezzo dei km da percorrere ${priceKmUser}€
 prezzo finale ${price}€
 `;
 
